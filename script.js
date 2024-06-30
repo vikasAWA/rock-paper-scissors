@@ -52,7 +52,7 @@ function getWinner() {
     let winner = document.createElement('div');
     winner.classList.add('winner');
     document.body.appendChild(winner);
-    winner.setAttribute('style', "color: green; font-size: 100px; text-align: center; margin-top: 300px");
+    winner.setAttribute('style', "color: red; font-size: 100px; text-align: center; margin-top: 300px");
     if (humanScore === 5) {
         winner.textContent = "You are the Winner!.";
         container.remove();
