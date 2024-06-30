@@ -21,14 +21,6 @@ function getComputerChoice() {
 }
 
 
-human.addEventListener("click", (e) => {
-    let humanChoice = e.target.alt.split(" ")[0];
-    let computerChoice = getComputerChoice();
-    console.log(computer.childNodes)
-    playRound(humanChoice, computerChoice);
-})
-
-
 function playRound(humanSelection, computerSelection) {
     let roundResult = document.querySelector(".text");
     switch (humanSelection + computerSelection) {
@@ -50,3 +42,9 @@ function playRound(humanSelection, computerSelection) {
 
     }
 }
+
+human.addEventListener("click", (e) => {
+    let humanChoice = e.target.alt.split(" ")[0];
+    let computerChoice = getComputerChoice();
+    playRound(humanChoice, computerChoice);
+})
