@@ -33,17 +33,18 @@ h1 {
     display: flex;
     margin-top: 10px;
     margin-bottom: 10px;
-    border: 2px solid red;
     justify-content: center;
 }
 
 #play {
     margin-right: auto;
     margin-left: auto;
+    flex-shrink: 1;
 }
 
 #display {
-    border: 3px solid black;
+    flex-basis: 400px;
+    flex-shrink: 1;
     margin-right: 100px;
     padding: 50px;
     background-color: black;
@@ -52,4 +53,27 @@ h1 {
     color: white;
 }
 
+.result {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.humanScore, 
+.computerScore {
+    color: aqua;
+    height: 20px;
+    font-size: 20px;
+}
+
+.highlight {
+    border: 5px solid red;
+}
+
+h2 {
+    color: white;
+    margin-top: 20px;
+}
 
